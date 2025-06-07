@@ -1,0 +1,50 @@
+.hero
+    padding: 100px 0
+    position: relative
+    &__title
+        font-weight: bold
+        font-size: 72px
+        line-height: 140%
+        max-width: 760px
+        color: $Grayscale50
+        margin-bottom: 50px
+        @include hero-title-line(465px)
+        &_location
+            @include hero-title-line(422px)
+        &_plans
+            @include hero-title-line(492px)
+        &_smaller
+            font-size: 52px
+            &::after
+                top: 140px
+    &__image
+        width: 100%
+        height: 600px
+        object-fit: cover
+    &__parametrs
+        position: absolute
+        right: 140px
+        top: 240px
+        background: $PrimaryBlue100
+        width: 252px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-around
+        padding-top: 30px
+        &__item
+            padding: 40px 0
+            color: $White
+            span
+                display: block
+                font-weight: 400
+                font-size: 16px
+                padding-bottom: 10px
+                line-height: 160%
+            strong
+                font-size: 48px
+    &__text-block
+        margin-top: 100px
+        width: 654px
+        &_plans
+            width: 634px

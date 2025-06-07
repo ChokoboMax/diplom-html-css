@@ -1,0 +1,27 @@
+@mixin title-line($width, $left)
+    &::after
+        content: ""
+        display: inline-block
+        position: absolute
+        width: $width
+        height: 2px
+        background: $GrayscaleBlack
+        top: 50%
+        margin-left: $left
+
+@mixin hero-title-line($width)
+    &::after
+        position: absolute
+        content: ""
+        top: 150px
+        right: 0
+        width: $width
+        height: 2px
+        background: $GrayscaleBlack
+    
+        
+@mixin text-width($width)
+    .infrastrukture__grid__item__text
+        max-width: $width
+    
+    
