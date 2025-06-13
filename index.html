@@ -10,13 +10,18 @@
     <header>
         <div class="container">
             <div class="header">
-                <div class="header__logo">БК "Ясенево"</div>
+                <a href="/index.html" class="header__logo">БК "Ясенево"</a>
                 <nav>
                     <ul class="nav">
                         <li class="nav__item"><a href="#">Главная</a></li>
-                        <li class="nav__item"><a href="pages/location.html">Расположение</a></li>
-                        <li class="nav__item"><a href="pages/plans.html">Планировки</a></li>
-                        <li class="nav__item nav__item_button button"><a href="tel:+74952214022">+7 (495) 221-40-22</a></li>
+                        <li class="nav__item nav__item_button-media nav__item_location"><a href="pages/location.html">Расположение</a></li>
+                        <li class="nav__item nav__item_button-media nav__item_plans"><a href="pages/plans.html">Планировки</a></li>
+                        <li class="nav__item nav__item_button button">
+                            <a class="nav__item__number" href="tel:+74952214022">+7 (495) 221-40-22</a>
+                            <a href="tel:+74952214022">
+                                <img class="nav__item__image-button" src="assets/images/header/call_button.png" alt="+7 (495) 221-40-22">    
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -81,7 +86,6 @@
         </div>
 
         <div class="image-separator">
-            <img src="assets/images/image-separator.png" alt="БК Ясенево" class="image-separator__image">
         </div>
 
         <div class="container">

@@ -17,3 +17,30 @@
 .list-block
     margin-top: 20px
     margin-left: 25px
+
+@media screen and (max-width: 1279px) and (min-width: 768px)
+    .pdf
+        margin-top: 60px
+        &__image
+            height: 113px
+            top: 183px
+            left: 565px
+    .list-block
+        margin-top: 46px
+@media screen and (max-width: 400px) and (min-width: 375px)
+    .pdf
+        margin-top: 60px
+        &__UpTitle
+            @include title-line(256px, 4px)
+        &__title-section
+            max-width: 312px
+        &__image
+            height: 113px
+            width: 113px
+            left: 0
+            top: 235px
+        &__button
+            margin-top: 175px
+    .list-block
+        margin-top: 20px
+

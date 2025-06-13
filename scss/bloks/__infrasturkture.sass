@@ -7,7 +7,7 @@
         margin-top: 46px
         display: grid
         grid-template-columns: 290px 290px 290px 290px
-        grid-template-rows: 300px 300px
+        grid-auto-rows: 300px
         grid-gap: 10px 10px
         &__item
             position: relative
@@ -22,7 +22,7 @@
                 color: $White
                 font-size: 18px
                 font-weight: 600
-                line-height: 120%                    
+                line-height: 120%        
             &:first-child
                 background: url("../assets/images/infrastrukture__grid/infrastrukture__grid__item-1.png")
                 grid-area: 1 / 1 / 2 / 3
@@ -41,5 +41,53 @@
                 background: url("../assets/images/infrastrukture__grid/infrastrukture__grid__item-5.png")
             &:nth-child(6)
                 background: url("../assets/images/infrastrukture__grid/infrastrukture__grid__item-6.png")
+            &:nth-child(1n+1)
+                background-repeat: no-repeat 
+                background-size: cover
+
+@media screen and (max-width: 1279px) and (min-width: 768px)
+    .infrastrukture
+        margin-top: 60px
+        &__grid
+            grid-template-columns: 354px 365px
+            grid-gap: 10px 15px
+            &__item
+                &:first-child
+                    grid-area: 1 / 1 / 2 / 3
+                &:nth-child(2)
+                    grid-area: 2 / 1 / 3 / 2
+                &:nth-child(3)
+                    grid-area: 2 / 2 / 3 / 3
+                &:nth-child(4)
+                    grid-area: 3 / 1 / 5 / 2
+
+@media screen and (max-width: 400px) and (min-width: 375px)
+    .infrastrukture
+        margin-top: 51px
+        &__UpTitle
+            @include title-line(222px, 3px)
+        &__title
+            max-width: 346px
+        &__grid
+            grid-template-columns: 343px
+            grid-gap: 10px 0px
+            &__item
+                &:first-child
+                    grid-area: 1 / 1 / 2 / 2
+                    background-position: -152px
+                    .infrastrukture__grid__item__text
+                        width: 254px
+                &:nth-child(2)
+                    grid-area: 2 / 1 / 3 / 2
+                &:nth-child(3)
+                    grid-area: 3 / 1 / 4 / 2
+                &:nth-child(4)
+                    grid-area: 4 / 1 / 6 / 2
+                    
+
+                
+
+
+
 
                 

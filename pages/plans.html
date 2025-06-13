@@ -10,13 +10,18 @@
     <header>
         <div class="container">
             <div class="header">
-                <div class="header__logo">БК "Ясенево"</div>
+                <a href="/index.html" class="header__logo">БК "Ясенево"</a>
                 <nav>
                     <ul class="nav">
-                        <li class="nav__item"><a href="../index.html">Главная</a></li>
-                        <li class="nav__item"><a href="../pages/location.html">Расположение</a></li>
-                        <li class="nav__item"><a href="../pages/plans.html">Планировки</a></li>
-                        <li class="nav__item nav__item_button button"><a href="tel:+74952214022">+7 (495) 221-40-22</a></li>
+                        <li class="nav__item"><a href="#">Главная</a></li>
+                        <li class="nav__item nav__item_button-media nav__item_location location-off"><a href="../pages/location.html">Расположение</a></li>
+                        <li class="nav__item nav__item_button-media nav__item_plans plans-off"><a href="../pages/plans.html">Планировки</a></li>
+                        <li class="nav__item nav__item_button button">
+                            <a class="nav__item__number" href="tel:+74952214022">+7 (495) 221-40-22</a>
+                            <a href="tel:+74952214022">
+                                <img class="nav__item__image-button" src="../assets/images/header/call_button.png" alt="+7 (495) 221-40-22">    
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -27,7 +32,7 @@
         <div class="container">
             <section class="hero">
                 <h1 class="hero__title hero__title_smaller hero__title_plans">Выбирайте планировку для любого бизнеса</h1>
-                <div class="hero__parametrs">
+                <div class="hero__parametrs hero__parametrs_angle hero__parametrs_plans ">
                     <div class="hero__parametrs__item">
                         <span><strong>от 60 м<sup>2</sup></strong></span>
                         <span>помещения под офисы</span>
@@ -85,7 +90,6 @@
         </div>
 
         <div class="image-separator">
-            <img src="../assets/images/image-separator.png" alt="БК Ясенево" class="image-separator__image">
         </div>
 
         <div class="container">

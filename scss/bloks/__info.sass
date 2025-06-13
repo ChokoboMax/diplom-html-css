@@ -8,7 +8,8 @@
 
 .present__block
     margin-top: 98px
-    width: 1200px
+    // width: 1200px
+    width: 100%
     background: $PrimaryBlue100
     padding: 55px 68px
     display: grid
@@ -40,3 +41,39 @@
         width: 175px
         position: relative
         left: 493px
+
+@media screen and (max-width: 1279px) and (min-width: 768px)
+    .present__block
+        grid-template-columns: 473px
+    .about-more
+        &__text
+            margin-top: 80px
+        &__button
+            left: 0
+
+@media screen and (max-width: 400px) and (min-width: 375px)
+    .info
+        margin-top: 120px
+        &__UpTitle
+            @include title-line(267px, 5px)
+        &__subtitle-text
+            max-width: 300px
+            margin-top: 31px
+            font-size: 16px
+    .present__block
+        padding: 50px 26px 69px 26px
+        grid-template-columns: 293px
+        grid-auto-rows: 70px
+        grid-gap: 30px 0px
+        &__item
+            &__image
+                width: 70px
+                height: 70px
+            &__text
+                margin: 20px 0px 12px 30px
+    .about-more
+        &__text
+            left: 0
+            width: 300px
+        &__button
+            left: 0

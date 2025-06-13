@@ -16,4 +16,76 @@
     justify-content: space-between
     width: 600px
     &__item
+        font-size: 16px
+        font-weight: 600
+        &__image-button
+            display: none
         &_button
+            width: 190px
+            font-size: 14px
+
+@media screen and (max-width: 1279px) and (min-width: 768px)
+    .container
+        width: 90vw
+    .header
+        &__logo
+            font-size: 20px
+            // font-weight: 400
+    .nav
+        width: 453px
+        &__item
+            font-size: 14px
+            &:first-child
+                display: none
+            &_button
+                width: 166px
+                height: 45px
+                padding: 12px 20px
+                font-weight: 400
+
+@media screen and (max-width: 400px) and (min-width: 375px)
+    .container
+        width: 92vw
+    .header
+        margin-top: 23px
+        &__logo
+            font-size: 20px
+    .nav
+        width: 63px
+        &__item
+            &__number
+                display: none
+            &__image-button
+                display: block
+                width: 23px
+                height: 25px
+            &_location
+                width: 175px
+                position: absolute
+                top: 549px
+                left: 0
+                z-index: 1
+            &_plans
+                width: 158px
+                position: absolute
+                top: 549px
+                left: 185px
+                z-index: 1
+            &_button
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 63px
+                height: 49px
+                &-media
+                    height: 49px
+                    background: $PrimaryBlue100
+                    color: $White
+                    text-align: center
+                    align-content: center
+            &:first-child
+                display: none
+    .location-off
+        display: none
+    .plans-off
+        display: none

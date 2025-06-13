@@ -9,11 +9,11 @@
         top: 50%
         margin-left: $left
 
-@mixin hero-title-line($width)
+@mixin hero-title-line($width, $top)
     &::after
         position: absolute
         content: ""
-        top: 150px
+        top: $top
         right: 0
         width: $width
         height: 2px

@@ -1,3 +1,20 @@
 .map
     &__UpTitle
         @include title-line(568px, 6px)
+        margin-bottom: 25px
+        
+
+@media screen and (max-width: 1279px) and (min-width: 768px)
+    .map
+        &__UpTitle
+            margin-bottom: 24px
+    .map__form
+        height: 574px
+
+@media screen and (max-width: 400px) and (min-width: 375px)
+    .map
+        margin: 34px 0 29px 0
+        &__UpTitle
+            @include title-line(222px, 11px)
+        &_fotm
+            height: 500px
