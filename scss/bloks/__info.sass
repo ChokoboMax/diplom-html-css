@@ -1,14 +1,13 @@
 .info
     position: relative
     &__UpTitle
-        @include title-line(529px, 13px)
+        @include title-line(529px, 13px) //---------------------линия у заголовка
     &__subtitle-text
         max-width: 654px
         margin-top: 46px
 
-.present__block
+.present__block //---------------------grid сетка блока презентации
     margin-top: 98px
-    // width: 1200px
     width: 100%
     background: $PrimaryBlue100
     padding: 55px 68px
@@ -29,7 +28,7 @@
             line-height: 120%
             color: $White
 
-.about-more
+.about-more //---------------------блок текста с кнопкой узнать больше
     position: relative
     &__text
         position: relative
@@ -47,6 +46,7 @@
         grid-template-columns: 473px
     .about-more
         &__text
+            left: 0
             margin-top: 80px
         &__button
             left: 0
@@ -55,7 +55,7 @@
     .info
         margin-top: 120px
         &__UpTitle
-            @include title-line(267px, 5px)
+            @include title-line(267px, 5px) //---------------------линия у заголовка
         &__subtitle-text
             max-width: 300px
             margin-top: 31px

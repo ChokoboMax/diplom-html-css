@@ -1,4 +1,4 @@
-@mixin title-line($width, $left)
+@mixin title-line($width, $left) //---------------------линия у заголовков секций ([ширина], [оступ свелва])
     &::after
         content: ""
         display: inline-block
@@ -9,7 +9,7 @@
         top: 50%
         margin-left: $left
 
-@mixin hero-title-line($width, $top)
+@mixin hero-title-line($width, $top) //---------------------линия у блока Hero ([ширина], [оступ свелва])
     &::after
         position: absolute
         content: ""
@@ -17,11 +17,4 @@
         right: 0
         width: $width
         height: 2px
-        background: $GrayscaleBlack
-    
-        
-@mixin text-width($width)
-    .infrastrukture__grid__item__text
-        max-width: $width
-    
-    
+        background: $GrayscaleBlack 

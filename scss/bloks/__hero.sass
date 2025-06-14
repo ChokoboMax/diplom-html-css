@@ -1,27 +1,25 @@
 .hero
     padding: 100px 0
     position: relative
-    &__title
+    &__title //--------------заголовок
         font-weight: bold
         font-size: 72px
         line-height: 140%
         max-width: 760px
         color: $Grayscale50
         margin-bottom: 50px
-        @include hero-title-line(465px, 150px)
+        @include hero-title-line(465px, 150px) //--------------полоса заголовка ([ширина],[отступ сверху])
         &_location
-            @include hero-title-line(422px, 140px)
+            @include hero-title-line(422px, 140px) //--------------полоса заголовка ([ширина],[отступ сверху])
         &_plans
-            @include hero-title-line(492px, 140px)
-        &_smaller
+            @include hero-title-line(492px, 140px) //--------------полоса заголовка ([ширина],[отступ сверху])
+        &_smaller //--------------заголовок на страницах Расоложение и Планировки
             font-size: 52px
-            &::after
-                // top: 140px
     &__image
         width: 100%
         height: 600px
         object-fit: cover
-    &__parametrs
+    &__parametrs //--------------шапка картинки [1 мин пешком], [от 60м], [2024 г.]
         position: absolute
         right: 140px
         top: 240px
@@ -45,16 +43,16 @@
             strong
                 font-size: 48px
                 font-weight: 400
-    &__text-block
+    &__text-block //--------------текстовый блока на странице Расположение
         margin-top: 100px
         width: 654px
-        &_plans
+        &_plans //--------------текстовый блока на странице Планировки
             width: 634px
 
 @media screen and (max-width: 1279px) and (min-width: 768px)
     .hero
         padding: 60px 0
-        &__title
+        &__title //--------------заголовок
             font-size: 40px
             max-width: 420px
             @include hero-title-line(335px, 89px)
@@ -62,7 +60,7 @@
                 @include hero-title-line(250px, 84.5px)
             &_plans
                 @include hero-title-line(292px, 84.5px)
-            &_smaller
+            &_smaller //--------------заголовок на страницах Расоложение и Планировки
                 font-size: 32px
                 max-width: 484px
         &__image
@@ -74,15 +72,14 @@
             top: 0
             flex-direction: row
             &__item
-                span
                 strong
                     font-size: 40px
-            &_angle
+            &_angle //---------------------параметр находящийся в углу
                 position: absolute
                 width: 236px
                 right: 0
                 top: 244.4px
-            &_plans
+            &_plans //---------------------параметр находящийся в углу на странице планировки
                 top: 199.5px
         &__text-block
             margin-top: 57px
@@ -98,8 +95,8 @@
             max-width: 250px
             &::after
                 content: none
-        &__title_location
-            max-width: 345px
+            &_smaller //--------------заголовок на страницах Расоложение и Планировки
+                max-width: 345px
         &__parametrs //---------------------посмотреть как адаптировал его препод в уроке
             position: relative
             width: 100%
@@ -114,13 +111,13 @@
                     font-size: 10px
                 strong
                     font-size: 20px
-            &_plans
-                top: 199.5px
-            &_angle
+            &_angle //---------------------параметр находящийся в углу
                 position: absolute
                 width: 152px
                 right: 0
                 top: 174.8px
+            &_plans //---------------------параметр находящийся в углу на странице планировки
+                top: 141.2px
         &__image
             height: 200px
         &__text-block
