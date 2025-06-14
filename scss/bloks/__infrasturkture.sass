@@ -21,11 +21,11 @@
                 font-size: 18px
                 font-weight: 600
                 line-height: 120%
-                &:first-child //---------------------у текста с первой картинки другая ширина
-                    width: 395px  
             &:first-child
                 background: url("../assets/images/infrastrukture__grid/infrastrukture__grid__item-1.png")
                 grid-area: 1 / 1 / 2 / 3
+                .infrastrukture__grid__item__text //---------------------у текста с первой картинки другая ширина
+                    width: 395px
             &:nth-child(2)
                 background: url("../assets/images/infrastrukture__grid/infrastrukture__grid__item-2.png")
                 grid-area: 2 / 1 / 3 / 2
@@ -71,11 +71,11 @@
             grid-gap: 10px 0px
             &__item
                 &__text
-                    &:first-child //---------------------у текста с первой картинки другая ширина
-                        width: 254px
                 &:first-child
                     grid-area: 1 / 1 / 2 / 2
                     background-position: -152px
+                    .infrastrukture__grid__item__text //---------------------у текста с первой картинки другая ширина
+                        width: 254px
                 &:nth-child(2)
                     grid-area: 2 / 1 / 3 / 2
                 &:nth-child(3)
